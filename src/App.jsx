@@ -15,7 +15,9 @@ export default function App() {
   return (
     <main className="relative">
       <Navigation />
-      <Hero />
+      <section className="xl:padding-l wide:padding-r padding-b">
+        <Hero />
+      </section>
       <PopularProduct />
       <SuperQuality />
       <Services />
