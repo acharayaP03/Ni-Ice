@@ -1,6 +1,7 @@
 import { hamburger } from '../assets/icons';
 import { headerLogo } from '../assets/images';
 import { navigationLinks } from '../constants';
+import NavLinks from '../components/NavLinks';
 
 export default function Navigation() {
   return (
@@ -11,14 +12,7 @@ export default function Navigation() {
         </a>
         <ul className="flex flex-1 items-center justify-center gap-16 max-lg:hidden">
           {navigationLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                className="font-montserrat text-slate-gray text-lg leading-normal"
-              >
-                {link.label}
-              </a>
-            </li>
+            <NavLinks link={link} />
           ))}
         </ul>
         <div className="hidden max-lg:block">
