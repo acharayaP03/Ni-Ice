@@ -1,8 +1,15 @@
-import React from 'react';
+import HeroCta from './HeroCta';
+import HeroFeaturedProduct from './HeroFeaturedProduct';
 
 const Hero = () => {
   return (
-    <section className="xs:padding-1 wide:padding-r padding-b">Hero</section>
+    <div
+      id="home"
+      className="max-container flex min-h-screen w-full flex-col justify-center gap-10 xl:flex-row"
+    >
+      <HeroCta />
+      <HeroFeaturedProduct />
+    </div>
   );
 };
 
