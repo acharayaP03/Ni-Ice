@@ -12,7 +12,7 @@ export default function Navigation() {
         </a>
         <ul className="flex flex-1 items-center justify-center gap-16 max-lg:hidden">
           {navigationLinks.map((link) => (
-            <NavLinks link={link} />
+            <NavLinks link={link} key={link.label} />
           ))}
         </ul>
         <div className="hidden max-lg:block">
