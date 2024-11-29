@@ -18,7 +18,9 @@ export default function App() {
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      <PopularProduct />
+      <section className="padding">
+        <PopularProduct />
+      </section>
       <SuperQuality />
       <Services />
       <SpecialOffers />
