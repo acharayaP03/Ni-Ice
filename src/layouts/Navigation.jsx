@@ -7,8 +7,11 @@ export default function Navigation() {
   return (
     <header className="padding-x absolute z-10 w-full py-8">
       <nav className="max-container flex items-center justify-between">
-        <a href="/">
+        {/* <a href="/">
           <img src={headerLogo} alt="Logo" width={130} height={29} />
+        </a> */}
+        <a href="/" className="font-palanquin font-bold leading-4">
+          <span className="text-3xl font-bold text-coral-red">[ Ni-Ice ]</span>
         </a>
         <ul className="flex flex-1 items-center justify-center gap-16 max-lg:hidden">
           {navigationLinks.map((link) => (
