@@ -21,16 +21,24 @@ export default function App() {
       <section className="padding">
         <PopularProduct />
       </section>
-      <section className="my-[12rem]">
+      <section className="mt-[12rem]">
         <SuperQuality />
       </section>
-      <section className="paddind-x py-10">
+      <section className="paddind-x mt-[12rem]">
         <Services />
       </section>
-      <SpecialOffers />
-      <CustomerReviews />
-      <Subscribe />
-      <Footer />
+      <section className="padding">
+        <SpecialOffers />
+      </section>
+      <section className="padding bg-pale-blue">
+        <CustomerReviews />
+      </section>
+      <section className="padding-x w-full py-16 sm:py-32">
+        <Subscribe />
+      </section>
+      <section className="padding-x padding-t bg-black pb-8">
+        <Footer />
+      </section>
     </main>
   );
 }
