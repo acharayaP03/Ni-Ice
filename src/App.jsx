@@ -21,8 +21,12 @@ export default function App() {
       <section className="padding">
         <PopularProduct />
       </section>
-      <SuperQuality />
-      <Services />
+      <section className="my-[12rem]">
+        <SuperQuality />
+      </section>
+      <section className="paddind-x py-10">
+        <Services />
+      </section>
       <SpecialOffers />
       <CustomerReviews />
       <Subscribe />
